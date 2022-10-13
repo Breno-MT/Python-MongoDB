@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 load_dotenv(find_dotenv())
 
-DATABASE_URI = os.getenv('MONGO_DB')
+DATABASE_URI = os.getenv("MONGO_DB")
 
 
 def get_database():
@@ -12,7 +12,7 @@ def get_database():
 
     client = MongoClient(CONNECTION_STRING)
 
-    return client['user_shopping_list']
+    return client["user_shopping_list"]
 
 
 if __name__ == "__main__":
